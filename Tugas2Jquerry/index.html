@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+
+    <title>Form Validator </title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+       
+        <h1>
+          Form Data Mahasiswa
+        </h1>
+      </div>
+      <form class="form" id="form">
+        <div class="form-control">
+          <label> Nama Lengkap</label>
+          <input type="text" placeholder="Nama Lengkap" id="nama" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label> NRP</label>
+          <input type="text" placeholder="0511194000xxx" id="nrp" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label> Email</label>
+          <input type="email" placeholder="Email Kamu" id="email" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label> Alamat Lengkap</label>
+          <input type="text" placeholder="Alamat Domisili" id="alamat" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label> Umur</label>
+          <input type="text" placeholder="Umur" id="umur" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label> Password</label>
+          <input type="text" placeholder=" Password" id="Password" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label> Konfirmasi Password</label>
+          <input type="text" placeholder="Konfirmasi Password" id="password" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div id="sudah-vaksin" class="verify-vaksin sudah-vaksin">
+          <div class="form-control">
+          </div>
+          <div class="form-control">
+          </div>
+          <div class="form-control">
+          </div>
+        </div>
+        <div id="belum-vaksin" class="verify-vaksin belum-vaksin">
+          <div class="form-control">
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+    <script type="text/javascript">
+     
+  
+      alertify.defaults.transition = "zoom";
+      alertify.defaults.theme.ok = "ui positive button";
+      alertify.defaults.theme.cancel = "ui black button";
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
